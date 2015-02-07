@@ -8,4 +8,10 @@
 
 class Item {
     
+    var barcodeValue: String = ""
+    
+    init(barcodeValue: String) {
+        self.barcodeValue = barcodeValue
+    }
+    
 }

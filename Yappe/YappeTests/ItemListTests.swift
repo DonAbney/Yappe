@@ -21,26 +21,36 @@ class ItemListTests: XCTestCase {
         super.tearDown()
     }
     
-    func testItemListCanAddItems() {
+    func testAddNewItemCanAddItem() {
         var itemList : ItemList = ItemList()
-        var testItem : Item = Item()
+        var testItem : Item = Item(barcodeValue: "test")
         
         itemList.addNewItem(testItem)
         
-        XCTAssert(testItem === itemList.items[0])
+        XCTAssert(testItem === itemList.items["test"])
         
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    
+    func testRemoveItemRemovesCorrectItemByBarcodeValue() {
+        var itemList : ItemList = ItemList()
+        var testItemOne : Item = Item(barcodeValue: "testOne")
+        var testItemTwo : Item = Item(barcodeValue: "testTwo")
+        itemList.addNewItem(testItemOne)
+        itemList.addNewItem(testItemTwo)
+        XCTAssert(itemList.items.count == 2)
+        
+        itemList.removeItem(testItemOne)
+        
+        XCTAssert(itemList.items.count == 1)
+        XCTAssertNil(itemList.items["testOne"])
+        XCTAssert(testItemTwo === itemList.items[testItemTwo.barcodeValue])
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testPerformanceExample() {
+//        // This is an example of a performance test case.
+//        self.measureBlock() {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
 
 }

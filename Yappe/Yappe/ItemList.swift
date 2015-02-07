@@ -8,10 +8,14 @@
 
 class ItemList {
     
-    var items : Array<Item> = []
+    var items = [String : Item]()
     
     func addNewItem(newItem : Item) {
-        items.append(newItem)
+        items[newItem.barcodeValue] = newItem
+    }
+    
+    func removeItem(itemToRemove : Item) {
+        items.removeValueForKey(itemToRemove.barcodeValue)
     }
     
 }
