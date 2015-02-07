@@ -8,7 +8,12 @@
 
 class ItemList {
     
+    var listIdentifier = ""
     var items = [String : Item]()
+    
+    init(listIdentifier : String) {
+        self.listIdentifier = listIdentifier
+    }
     
     func addNewItem(newItem : Item) {
         items[newItem.barcodeValue] = newItem

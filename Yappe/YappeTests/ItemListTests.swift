@@ -22,7 +22,7 @@ class ItemListTests: XCTestCase {
     }
     
     func testAddNewItemCanAddItem() {
-        var itemList : ItemList = ItemList()
+        var itemList : ItemList = ItemList(listIdentifier: "test")
         var testItem : Item = Item(barcodeValue: "test")
         
         itemList.addNewItem(testItem)
@@ -32,7 +32,7 @@ class ItemListTests: XCTestCase {
     }
     
     func testRemoveItemRemovesCorrectItemByBarcodeValue() {
-        var itemList : ItemList = ItemList()
+        var itemList : ItemList = ItemList(listIdentifier: "Test")
         var testItemOne : Item = Item(barcodeValue: "testOne")
         var testItemTwo : Item = Item(barcodeValue: "testTwo")
         itemList.addNewItem(testItemOne)
@@ -44,6 +44,17 @@ class ItemListTests: XCTestCase {
         XCTAssert(itemList.items.count == 1)
         XCTAssertNil(itemList.items["testOne"])
         XCTAssert(testItemTwo === itemList.items[testItemTwo.barcodeValue])
+    }
+    
+    func testItemListsCanHaveUniqueIdentifiers() {
+        let listIdOne = "Item List One"
+        let listIdTwo = "Item List Two"
+        var itemListOne : ItemList = ItemList(listIdentifier : listIdOne)
+        var itemListTwo : ItemList = ItemList(listIdentifier : listIdTwo)
+        
+        XCTAssertEqual(itemListOne.listIdentifier, listIdOne)
+        XCTAssertEqual(itemListTwo.listIdentifier, listIdTwo)
+        
     }
 
 //    func testPerformanceExample() {
