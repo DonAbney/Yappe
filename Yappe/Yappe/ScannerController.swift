@@ -28,9 +28,7 @@ class ScannerController: RSCodeReaderViewController {
             }
         }
         
-        for subview in self.view.subviews {
-            self.view.bringSubviewToFront(subview as UIView)
-        }
+        setCameraLayerToBottom()
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,6 +38,12 @@ class ScannerController: RSCodeReaderViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var firstView: ViewController = segue.destinationViewController as ViewController
+    }
+    
+    func setCameraLayerToBottom() {
+        for subview in self.view.subviews {
+            self.view.bringSubviewToFront(subview as UIView)
+        }
     }
     
     

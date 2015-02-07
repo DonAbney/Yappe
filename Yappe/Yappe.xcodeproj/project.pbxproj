@@ -16,6 +16,11 @@
 		3D08DA721A8580270064C60E /* YappeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DA711A8580270064C60E /* YappeTests.swift */; };
 		3D08DA861A858D290064C60E /* ScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DA851A858D290064C60E /* ScannerController.swift */; };
 		3D08DA951A85AB450064C60E /* RSBarcodes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D08DA8D1A85A9C00064C60E /* RSBarcodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DFAB60E1A86726A00721B3C /* ItemListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAB60D1A86726A00721B3C /* ItemListTests.swift */; };
+		3DFAB6101A8672F300721B3C /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAB60F1A8672F300721B3C /* ItemList.swift */; };
+		3DFAB6111A8672F300721B3C /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAB60F1A8672F300721B3C /* ItemList.swift */; };
+		3DFAB6131A8673B400721B3C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAB6121A8673B400721B3C /* Item.swift */; };
+		3DFAB6141A8673B400721B3C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAB6121A8673B400721B3C /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,9 @@
 		3D08DA711A8580270064C60E /* YappeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YappeTests.swift; sourceTree = "<group>"; };
 		3D08DA851A858D290064C60E /* ScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerController.swift; sourceTree = "<group>"; };
 		3D08DA881A85A9C00064C60E /* RSBarcodes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RSBarcodes.xcodeproj; path = ../RSBarcodes_Swift/RSBarcodes.xcodeproj; sourceTree = "<group>"; };
+		3DFAB60D1A86726A00721B3C /* ItemListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListTests.swift; sourceTree = "<group>"; };
+		3DFAB60F1A8672F300721B3C /* ItemList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		3DFAB6121A8673B400721B3C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,8 @@
 				3D08DA5A1A8580270064C60E /* Yappe.xcdatamodeld */,
 				3D08DA561A8580270064C60E /* Supporting Files */,
 				3D08DA851A858D290064C60E /* ScannerController.swift */,
+				3DFAB60F1A8672F300721B3C /* ItemList.swift */,
+				3DFAB6121A8673B400721B3C /* Item.swift */,
 			);
 			path = Yappe;
 			sourceTree = "<group>";
@@ -136,6 +146,7 @@
 			children = (
 				3D08DA711A8580270064C60E /* YappeTests.swift */,
 				3D08DA6F1A8580270064C60E /* Supporting Files */,
+				3DFAB60D1A86726A00721B3C /* ItemListTests.swift */,
 			);
 			path = YappeTests;
 			sourceTree = "<group>";
@@ -277,6 +288,8 @@
 				3D08DA861A858D290064C60E /* ScannerController.swift in Sources */,
 				3D08DA5E1A8580270064C60E /* ViewController.swift in Sources */,
 				3D08DA591A8580270064C60E /* AppDelegate.swift in Sources */,
+				3DFAB6131A8673B400721B3C /* Item.swift in Sources */,
+				3DFAB6101A8672F300721B3C /* ItemList.swift in Sources */,
 				3D08DA5C1A8580270064C60E /* Yappe.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DFAB6141A8673B400721B3C /* Item.swift in Sources */,
+				3DFAB6111A8672F300721B3C /* ItemList.swift in Sources */,
+				3DFAB60E1A86726A00721B3C /* ItemListTests.swift in Sources */,
 				3D08DA721A8580270064C60E /* YappeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +492,7 @@
 				3D08DA771A8580270064C60E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D08DA781A8580270064C60E /* Build configuration list for PBXNativeTarget "YappeTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +501,7 @@
 				3D08DA7A1A8580270064C60E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
