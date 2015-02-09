@@ -16,12 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="iT4-ci-6qF">
-                                <rect key="frame" x="172" y="28" width="256" height="256"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wk2-lY-T3L">
                                 <rect key="frame" x="0.0" y="483" width="300" height="117"/>
-                                <color key="backgroundColor" red="0.80368134469999997" green="0.4986293295" blue="0.045000190609999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="5Ct-wi-oXx"/>
                                     <constraint firstAttribute="height" constant="117" id="GqY-Kr-OSR"/>
@@ -29,6 +25,7 @@
                                     <constraint firstAttribute="width" constant="290" id="nHr-38-PAd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="List">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,11 +39,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVL-rY-2hv">
                                 <rect key="frame" x="300" y="483" width="300" height="117"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="zZ2-fk-2mc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -59,14 +56,17 @@
                                     <segue destination="zjW-2b-TXF" kind="show" id="MFV-G7-50r"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="iT4-ci-6qF">
+                                <rect key="frame" x="172" y="43" width="256" height="256"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.088747467928270887" green="0.53727020189442087" blue="0.78900331439393934" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fVL-rY-2hv" firstAttribute="top" secondItem="Wk2-lY-T3L" secondAttribute="top" id="28K-bB-GGl"/>
                             <constraint firstItem="Wk2-lY-T3L" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="2HD-d4-eFF"/>
                             <constraint firstItem="fVL-rY-2hv" firstAttribute="leading" secondItem="Wk2-lY-T3L" secondAttribute="trailing" id="Mii-0X-tZm"/>
                             <constraint firstItem="Wk2-lY-T3L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YJN-or-jcB"/>
-                            <constraint firstItem="iT4-ci-6qF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="fgF-BA-l35"/>
+                            <constraint firstItem="iT4-ci-6qF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="fgF-BA-l35"/>
                             <constraint firstItem="iT4-ci-6qF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iFb-8s-wTO"/>
                             <constraint firstItem="fVL-rY-2hv" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="spW-Vj-C4y"/>
                             <constraint firstAttribute="trailing" secondItem="fVL-rY-2hv" secondAttribute="trailing" id="xxK-Yo-QGG"/>
@@ -92,8 +92,10 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hna-ac-oWZ">
                                 <rect key="frame" x="0.0" y="451" width="600" height="149"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="All Done">
+                                <color key="backgroundColor" red="0.088747467930000004" green="0.53727020189999997" blue="0.78900331440000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Done">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

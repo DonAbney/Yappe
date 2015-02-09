@@ -26,11 +26,11 @@
                         <constraint firstAttribute="width" constant="119" id="fDj-B0-jSB"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
-                    <color key="textColor" red="0.13683668125997317" green="0.61671760812250787" blue="0.95979324494949492" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.088747467930000004" green="0.53727020189999997" blue="0.78900331440000004" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="91S-fi-hIH" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" id="2bs-i7-8fo"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="8ie-xW-0ye" secondAttribute="leading" id="Ezz-Hp-11b"/>
